@@ -234,12 +234,14 @@ cd .. &amp; call scripts\gen_mupdf_generated.bat bin\cmapdump.exe</Command>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\rel64\cmapdump.exe\ (xcopy /Q /E /Y /I ..\rel64\cmapdump.exe ..\bin &gt; nul) ELSE (xcopy /Q /Y /I ..\rel64\cmapdump.exe ..\bin &gt; nul)

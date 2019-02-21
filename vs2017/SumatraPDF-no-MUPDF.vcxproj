@@ -122,9 +122,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\rel64\sumatra\</OutDir>
+    <OutDir>..\rel64\</OutDir>
     <IntDir>..\rel64\obj\x64\Release\SumatraPDF-no-MUPDF\</IntDir>
-    <TargetName>SumatraPDF</TargetName>
+    <TargetName>SumatraPDF-no-MUPDF</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
